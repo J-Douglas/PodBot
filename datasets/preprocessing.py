@@ -1,6 +1,6 @@
 def preprocessing():
-    original = open("naval ravikant/transcript_1.txt",'r')
-    revised = open("naval ravikant/revised_transcript_1.txt","w")
+    original = open("naval ravikant/transcript_3.txt",'r')
+    revised = open("naval ravikant/revised_transcript_3.txt","w")
     lines = original.readlines()
 
     while "\n" in lines:
@@ -10,12 +10,13 @@ def preprocessing():
 
     for j in range(len(lines)):
         lines[j] = lines[j].strip()
-        if lines[j][:16] == "Naval Ravikant: ":
-            processed_lines.append(lines[j][16:])
-        elif lines[j][:13] == "Tim Ferriss: ":
-            processed_lines.append(lines[j][13:])
-        else:    
-            processed_lines[-1] = processed_lines[-1] + " " + lines[j]
+        if j is not 0:
+            if lines[j-1][0:1] is "[":
+                processed_lines.append(lines[j])
+            else:
+                if lines[j][0:1] is not "[":
+                    processed_lines[-1] = processed_lines[-1] + " " + lines[j]
+        
 
     i = 0
     start_episode = True
