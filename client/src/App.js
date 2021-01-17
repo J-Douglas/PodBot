@@ -36,7 +36,7 @@ function App() {
     ])
 
     $.ajax({
-      url: 'http://0.0.0.0:8000/interact',
+      url: 'http://localhost:8080/interact',
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json',

@@ -142,7 +142,7 @@ which you can send and receive messages using a browser.
 
 **Example command:** `python parlai/chat_service/services/browser_chat/run.py --config-path parlai/chat_service/tasks/chatbot/config.yml --port 10001`
 
-If no port number is specified in `--port` then the default port used will be `34596`. If specifying, ensure both port numbers match on client and server side.
+If no port number is specified in `--port` then the default port used will be `35496`. If specifying, ensure both port numbers match on client and server side.
 
 
 ### Facebook Messenger
@@ -194,7 +194,7 @@ which you can send and receive messages from using the terminal.
 **Example command:** `python parlai/chat_service/services/terminal_chat/run.py --config-path parlai/chat_service/tasks/chatbot/config.yml --port 10001`
 
 
-If no port number is specified in `--port` then the default port used will be `34596`. If specifying, ensure both port numbers match on client and server side.
+If no port number is specified in `--port` then the default port used will be `35496`. If specifying, ensure both port numbers match on client and server side.
 
 ### Web Sockets
 

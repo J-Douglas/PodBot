@@ -125,8 +125,8 @@ acts:
     - the old hardy man page, http://manpages.ubuntu.com/manpages/hardy/man1/gcalctool.1.html
       says "delete" clears the screen, but it doesn't . because LTS are good .
     text: "I just added a second usb printer but not sure what the uri should read\
-      \ - can anyone help with usb printers? . \n firefox 0.0.0.0:631 . \n firefox?\
-      \ . \n yes . firefox 0.0.0.0:631 . firefox http://0.0.0.0:631 . cups has\
+      \ - can anyone help with usb printers? . \n firefox localhost:631 . \n firefox?\
+      \ . \n yes . firefox localhost:631 . firefox http://localhost:631 . cups has\
       \ a web based interface ."
 num_episodes: 18920
 num_examples: 18920

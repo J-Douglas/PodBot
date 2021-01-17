@@ -146,8 +146,8 @@ def on_close(ws):
 
 
 def _run_browser():
-    host = opt.get('host', '0.0.0.0')
-    serving_port = opt.get('serving_port', 8000)
+    host = opt.get('host', '')
+    serving_port = opt.get('serving_port', 8080)
 
     httpd = HTTPServer((host, serving_port), BrowserHandler)
 
@@ -180,13 +180,13 @@ def setup_args():
     )
     parser_grp.add_argument(
         '--host',
-        default='0.0.0.0',
+        default='',
         type=str,
-        help='Host from which allow requests, use 0.0.0.0 to allow all IPs',
+        help='Host from which allow requests, use localhost to allow all IPs',
     )
     parser_grp.add_argument(
         '--serving_port',
-        default=8000,
+        default=8080,
         type=int,
         help='Port used to configure the server',
     )
@@ -196,10 +196,10 @@ def setup_args():
 
 if __name__ == "__main__":
     opt = setup_args()
-    port = opt.get('port', 34596)
+    port = opt.get('port', 35496)
     print("Connecting to port: ", port)
     ws = websocket.WebSocketApp(
-        "ws://0.0.0.0:{}/websocket".format(port),
+        "ws://websocket:{}/websocket".format(port),
         on_message=on_message,
         on_error=on_error,
         on_close=on_close,

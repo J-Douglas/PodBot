@@ -33,7 +33,7 @@ from parlai.core.script import ParlaiScript, register_script
 
 
 def multiprocess_train(
-    rank, opt, port=61337, rank_offset=0, gpu=None, hostname='0.0.0.0'
+    rank, opt, port=61337, rank_offset=0, gpu=None, hostname='localhost'
 ):
     init_method = f"tcp://{hostname}:{port}"
     with distributed_utils.distributed_context(

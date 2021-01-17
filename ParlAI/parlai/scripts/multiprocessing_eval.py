@@ -32,7 +32,7 @@ from parlai.core.script import ParlaiScript, register_script
 
 
 def multiprocess_eval(
-    rank, opt, port=61337, rank_offset=0, gpu=None, hostname='0.0.0.0'
+    rank, opt, port=61337, rank_offset=0, gpu=None, hostname='localhost'
 ):
     """
     Run a multiprocessing evaluation.

@@ -258,7 +258,7 @@ class MessengerManager(ChatServiceManager):
         # Set up receive
         socket_use_url = self.server_url
         if self.opt['local']:  # skip some hops for local stuff
-            socket_use_url = 'https://0.0.0.0'
+            socket_use_url = 'https://localhost'
         self.socket = ChatServiceMessageSocket(
             socket_use_url, self.port, self._handle_webhook_event
         )

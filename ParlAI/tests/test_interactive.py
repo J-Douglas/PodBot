@@ -101,24 +101,24 @@ class TestInteractiveWeb(unittest.TestCase):
         thread.start()
         iweb.wait()
 
-        r = requests.get(f'http://0.0.0.0:{port}/')
+        r = requests.get(f'http://localhost:{port}/')
         assert '<html>' in r.text
 
-        r = requests.post(f'http://0.0.0.0:{port}/interact', data='This is a test')
+        r = requests.post(f'http://localhost:{port}/interact', data='This is a test')
         assert r.status_code == 200
         response = json.loads(r.text)
         assert 'text' in response
         assert response['text'] == 'This is a test'
 
-        r = requests.post(f'http://0.0.0.0:{port}/reset')
+        r = requests.post(f'http://localhost:{port}/reset')
         assert r.status_code == 200
         response = json.loads(r.text)
         assert response == {}
 
-        r = requests.get(f'http://0.0.0.0:{port}/bad')
+        r = requests.get(f'http://localhost:{port}/bad')
         assert r.status_code == 500
 
-        r = requests.post(f'http://0.0.0.0:{port}/bad')
+        r = requests.post(f'http://localhost:{port}/bad')
         assert r.status_code == 500
 
         iweb.shutdown()

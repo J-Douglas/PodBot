@@ -226,7 +226,7 @@ def sync_parameters(model: torch.nn.Module) -> bool:
 
 @contextlib.contextmanager
 def distributed_context(
-    rank, opt, rank_offset=0, gpu=None, init_method="tcp://0.0.0.0:61337"
+    rank, opt, rank_offset=0, gpu=None, init_method="tcp://localhost:61337"
 ):
     """
     A context which wraps initialization of a distributed/multiprocessing run.
@@ -247,7 +247,7 @@ def distributed_context(
         Which GPU to use. Defaults to using rank and local devices, but must be
         manually specified when using many-hosts.
     :param str init method:
-        Init method, such as ``tcp://0.0.0.0:61337``. See torch.distributed docs.
+        Init method, such as ``tcp://localhost:61337``. See torch.distributed docs.
     """
     # Set per-host options
     opt = copy.deepcopy(opt)

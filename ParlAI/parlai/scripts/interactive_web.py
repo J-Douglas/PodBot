@@ -25,7 +25,7 @@ import parlai.utils.logging as logging
 import json
 import time
 
-HOST_NAME = '0.0.0.0'
+HOST_NAME = 'localhost'
 PORT = 8080
 
 SHARED: Dict[Any, Any] = {}
@@ -246,7 +246,7 @@ def setup_interweb_args(shared):
         '--host',
         default=HOST_NAME,
         type=str,
-        help='Host from which allow requests, use 0.0.0.0 to allow all IPs',
+        help='Host from which allow requests, use localhost to allow all IPs',
     )
     return parser
 

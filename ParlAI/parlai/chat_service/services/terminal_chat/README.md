@@ -15,4 +15,4 @@ which you can send and receive messages from using the terminal.
 2. Run: `python client.py --port PORT_NUMBER`
 3. Interact
 
-If no port number is specified in `--port` then the default port used will be `34596`. If specifying, ensure both port numbers match on client and server side.
+If no port number is specified in `--port` then the default port used will be `35496`. If specifying, ensure both port numbers match on client and server side.

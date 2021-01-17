@@ -111,10 +111,10 @@ def setup_args():
 
 if __name__ == "__main__":
     opt = setup_args()
-    port = opt.get('port', 34596)
+    port = opt.get('port', 35496)
     print("Connecting to port: ", port)
     ws = websocket.WebSocketApp(
-        "ws://0.0.0.0:{}/websocket".format(port),
+        "ws://localhost:{}/websocket".format(port),
         on_message=on_message,
         on_error=on_error,
         on_close=on_close,

@@ -58,7 +58,7 @@ acts:
     id: dstc7
     label_candidates:
     - 'you need to boot into a recovery shell and add your hostname to /etc/hosts
-      to map to a 0.0.0.0 ip address (eg: 127.0.0.2)'
+      to map to a localhost ip address (eg: 127.0.0.2)'
     - 'not at all.  i''d first try google: ''ubuntu wine-doors "typeError: can''t
       concatenate"'' and see if someone else stumbled into this'
     - yea, same here.  - nvidia graphics card?

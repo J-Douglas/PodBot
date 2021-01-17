@@ -291,7 +291,7 @@ commands:
           command: |
             sudo apt-get install linkchecker
             python -m http.server --directory website/build >/dev/null &
-            linkchecker http://0.0.0.0:8000/
+            linkchecker http://localhost:8080/
             kill %1
       - when:
          condition: << parameters.deploy >>

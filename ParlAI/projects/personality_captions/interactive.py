@@ -22,7 +22,7 @@ from base64 import b64decode
 import io
 import os
 
-HOST_NAME = '0.0.0.0'
+HOST_NAME = 'localhost'
 PORT = 8080
 SHARED: Dict[str, Any] = {}
 IMAGE_LOADER = None
