@@ -71,7 +71,6 @@ function App() {
         </IconButton>
       </FormControl>
     </form>
-
     <FlipMove>
         {
           messages.map(({ id, message, isUser }) => (
