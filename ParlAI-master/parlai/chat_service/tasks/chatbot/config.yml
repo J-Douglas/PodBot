@@ -13,8 +13,8 @@ opt:
   models:
     blender_90M:
       model: transformer/generator
-      model_file: zoo:blender/blender_90M/model
+      model_file: from_pretrained/model
+      inference: topk
       interactive_mode: True
-      no_cuda: True
 additional_args:
   page_id: 1 # Configure Your Own Page

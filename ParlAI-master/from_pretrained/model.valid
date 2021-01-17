@@ -1,0 +1,4 @@
+valid:
+    ctpb  ctps  exps  exs  gpu_mem  loss    lr  ltpb  ltps   ppl  token_acc  total_train_updates  tpb   tps
+    5874 42715 85.09 6248   .09973  3.44 1e-05 855.7  6223 31.18      .5392                  775 6730 48938
+

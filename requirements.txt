@@ -53,7 +53,6 @@ oauthlib==3.1.0
 omegaconf==2.0.5
 packaging==20.8
 pandas==1.2.0
--e git+https://github.com/J-Douglas/HTN2020.git@e5718ef23aa89ee5f3060b70f176915350d6664e#egg=parlai
 parso==0.8.1
 pexpect==4.8.0
 pickleshare==0.7.5
