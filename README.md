@@ -8,11 +8,11 @@ For our Hack the North 2020 project, we were first inspired to make a chatbot wh
 
 First, you must clone the respository with the following:
 
-'git clone https://github.com/J-Douglas/PodBot.git'
+`git clone https://github.com/J-Douglas/PodBot.git`
 
 The size of our model means that you must have Git Large File Storage installed. You can get Git LFS with Homebrew or Macports by using the following:
 
-'brew install git-lfs'
+`brew install git-lfs`
 
 ## Model
 
