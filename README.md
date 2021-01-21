@@ -26,6 +26,6 @@ We scraped 150 transcripts from the Tim Ferris Show to create a custom dataset w
 
 Navigate to the cloned repository and type the following into the terminal:
 
-'docker-compose up'
+`docker-compose up`
 
 The chatbot will deployed locally at a specified address you can find in the terminal messages.
